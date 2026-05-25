@@ -4,21 +4,93 @@
       box-sizing:border-box;
 
     }
+
+    :root{
+      --cta-bg:#0b0b0b;
+      --cta-panel:rgba(18,18,18,0.92);
+      --cta-accent:#25d366;
+      --cta-accent-dark:#1aa555;
+      --cta-text:#f1f1f1;
+      --cta-muted:#c9c9c9;
+    }
+
+    .community-cta{
+      padding:56px 20px 64px;
+      background:
+        radial-gradient(1200px 420px at 50% -20%, rgba(37,211,102,0.22), rgba(0,0,0,0)),
+        linear-gradient(180deg, var(--cta-bg), #111);
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    .community-cta-inner{
+      max-width:980px;
+      margin:0 auto;
+      text-align:center;
+      background:linear-gradient(135deg, var(--cta-panel), rgba(8,8,8,0.9));
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:28px;
+      padding:40px 28px;
+      box-shadow:0 20px 60px rgba(0,0,0,0.45);
+    }
+
+
+    .community-title{
+      font-size:clamp(32px, 4vw, 52px);
+      font-weight:700;
+      letter-spacing:-0.5px;
+      margin-bottom:14px;
+      color:var(--cta-text);
+    }
+
+    .community-text{
+      color:var(--cta-muted);
+      font-size:clamp(14px, 2vw, 18px);
+      line-height:1.6;
+      max-width:720px;
+      margin:0 auto;
+    }
+
+    .community-button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      margin-top:22px;
+      padding:14px 34px;
+      border-radius:999px;
+      background:linear-gradient(135deg, var(--cta-accent), var(--cta-accent-dark));
+      color:#061b0d;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow:0 12px 26px rgba(37,211,102,0.3);
+      transition:transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    }
+
+    .community-button:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 30px rgba(37,211,102,0.35);
+      filter:brightness(1.05);
+    }
+
+    .community-button:focus-visible{
+      outline:2px solid #9bf2c0;
+      outline-offset:3px;
+    }
     
     .background{
-      background-image: url(background.jpg);
+      background-image: url(green-background.avif);
       background-repeat: no-repeat;
       background-size: cover;
+      padding:40px 16px 56px;
     }
 
     .help-container{
-      border-radius: 10%;
+      border-radius: 28px;
       border: 10px solid rgb(59, 228, 8);
       background-color: black;
-      padding: 50px;
-      width:100%;
-      max-width:600px;
-      margin-left: 33%;
+      padding: clamp(26px, 4vw, 50px);
+      width: 92%;
+      max-width: 720px;
+      margin: 32px auto 56px;
       font-size: medium;
 
     }
@@ -96,20 +168,6 @@
       max-height:200px;
     }
 
-    @media(max-width:768px){
-
-      .help-title{
-        font-size:30px;
-      }
-
-      .left h3{
-        font-size:20px;
-      }
-
-      .help-header{
-        padding:22px 0;
-      }
-    } 
     body{
     font-family: 'Poppins', sans-serif;
     color:white;
@@ -443,4 +501,226 @@
 
   .hamburger.active span:nth-child(3){
     transform:rotate(-45deg) translateY(-11px);
+  }
+
+  footer {
+    background-color: #000;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-links {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-column {
+    min-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .footer-column h4 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-column ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    background-color: #000;
+    padding: 20px 80px;
+    font-size: 12px;
+    color: #b3b3b3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom a {
+    color: #b3b3b3;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 1024px) {
+    footer {
+      padding: 30px;
+    }
+
+    .footer-links {
+      gap: 20px;
+    }
+  }
+
+  @media(max-width:768px){
+
+    .help-title{
+      font-size:30px;
+      text-align:center;
+    }
+
+    .left h3{
+      font-size:20px;
+    }
+
+    .help-header{
+      padding:22px 0;
+      gap:12px;
+    }
+
+    .left{
+      gap:14px;
+    }
+
+    .left i{
+      font-size:18px;
+    }
+
+    .content{
+      font-size:15px;
+    }
+
+    .nav-bar{
+      height:auto;
+      padding:12px 18px;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .logo-section{
+      width:100%;
+    }
+
+    .logo h1{
+      font-size:18px;
+    }
+
+    .logo img,
+    .home-icon{
+      width:40px;
+      height:40px;
+    }
+
+    .hamburger{
+      display:flex;
+      margin-left:6px;
+    }
+
+    .link-section{
+      position:absolute;
+      top:100%;
+      left:0;
+      width:100%;
+      background:rgba(8,8,8,0.98);
+      backdrop-filter:blur(20px);
+      flex-direction:column;
+      align-items:flex-start;
+      padding:0;
+      margin-left:0;
+      max-height:0;
+      overflow:hidden;
+      transition:0.4s ease;
+      z-index:999;
+    }
+
+    .link-section.active{
+      max-height:400px;
+      padding:15px;
+    }
+
+    .link-section a{
+      width:100%;
+      padding:10px 12px;
+      font-size:13px;
+      border-radius:12px;
+    }
+
+    .background{
+      padding:28px 12px 44px;
+    }
+
+    .help-container{
+      width:100%;
+      border-radius:20px;
+      border-width:8px;
+    }
+
+    .community-cta{
+      padding:48px 16px 56px;
+    }
+
+    .community-cta-inner{
+      padding:32px 20px;
+    }
+
+    footer {
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .footer-links {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+      padding: 16px;
+    }
+  } 
+
+  @media(max-width:520px){
+    .link-section a{
+      font-size:12px;
+      padding:8px 10px;
+    }
+
+    .help-title{
+      font-size:26px;
+    }
+
+    .left h3{
+      font-size:18px;
+    }
+
+    .community-cta-inner{
+      border-radius:20px;
+    }
   }

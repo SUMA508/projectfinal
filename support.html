@@ -26,22 +26,20 @@
             <path d="M12 3.2 2.8 10.5a1 1 0 0 0 .6 1.8H5V20a1 1 0 0 0 1 1h4v-5h4v5h4a1 1 0 0 0 1-1v-7.7h1.6a1 1 0 0 0 .6-1.8L12 3.2Z"/>
           </svg>
         </div></a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
-    
-    
-    <button class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    
+
     <div class="link-section" id="linkSection">
       <a href="premium.html" class="nav-premium">Premium</a>
       <a href="support.html" class="support">Support</a>
-      <a href="#" class="install">Install App</a>
-      <a href="#" class="signup">Sign Up</a>
-      <a href="#" class="login">Log in</a>
+      <a href="install.html" class="install">Install App</a>
+      <a href="signup.html" class="signup">Sign Up</a>
+      <a href="login.html" class="login">Log in</a>
     </div>
   </div>
   <div class="background">
@@ -153,7 +151,89 @@
 
   </div>
   </div>
+  <div class="community-cta" aria-label="Community">
+    <div class="community-cta-inner">
+      <h2 class="community-title">Visit our Community</h2>
+      <p class="community-text">
+        Have questions? Find answers from our worldwide Community of expert fans!
+      </p>
+      <a class="community-button" href="https://audiomack.zendesk.com/hc/en-us">Go to Community</a>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="footer-logo">
+        <img src="audio.png" alt="Logo">
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">For the Record</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Communities</h4>
+          <ul>
+            <li><a href="#">For Artists</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Vendors</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Web Player</a></li>
+            <li><a href="#">Free Mobile App</a></li>
+            <li><a href="#">Contact Spotify</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Spotify Plans</h4>
+          <ul>
+            <li><a href="#">Premium Individual</a></li>
+            <li><a href="#">Premium Duo</a></li>
+            <li><a href="#">Premium Family</a></li>
+            <li><a href="#">Spotify Free</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <div>
+      <a href="#">Legal</a>
+      <a href="#">Safety &amp; Privacy Center</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookies</a>
+      <a href="#">About Ads</a>
+      <a href="#">Accessibility</a>
+    </div>
+    <div>© 2026 AudioMack AB | Kosovo (English)</div>
+  </div>
   <script>
+    const hamburger = document.getElementById("hamburger");
+    const linkSection = document.getElementById("linkSection");
+
+    if (hamburger && linkSection) {
+      hamburger.addEventListener("click", () => {
+        linkSection.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      linkSection.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          linkSection.classList.remove("active");
+          hamburger.classList.remove("active");
+        });
+      });
+    }
+
     const items = document.querySelectorAll(".help-item");
 
     items.forEach(item => {
