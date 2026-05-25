@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Audio Mack - Your Music, Your Way</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/magic-retro" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="logo-section">
+      <div class="logo"> 
+        <img src="images (2).png" alt="">
+        <div class="home-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3.2 2.8 10.5a1 1 0 0 0 .6 1.8H5V20a1 1 0 0 0 1 1h4v-5h4v5h4a1 1 0 0 0 1-1v-7.7h1.6a1 1 0 0 0 .6-1.8L12 3.2Z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    
+    <div class="search">
+      <input type="search" placeholder="What do you want to listen to?" aria-label="Search"  class="input">
+      <button class="search-btn" type="submit" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="nav-title">AudioMack</div>
+    
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <div class="link-section" id="linkSection">
+      <a href="premium.html" class="premium">Premium</a>
+      <a href="support.html" class="support">Support</a>
+      <a href="install.html" class="install">Install App</a>
+      <a href="signup.html" class="signup">Sign Up</a>
+      <a href="login.html" class="login">Log in</a>
+    </div>
+  </div>
+  <div class="main">
+<aside class="sidebar">
+      <div class="library-header">
+        <h2>Your Library</h2>
+        <button class="create-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          Create
+        </button>
+      </div>
+
+      <div class="library-card">
+        <h3>Create your first playlist</h3>
+        <p>It's easy, we'll help you</p>
+        <button class="card-btn">Create playlist</button>
+      </div>
+
+      <div class="library-card">
+        <h3>Let's find some podcasts to follow</h3>
+        <p>We'll keep you updated on new episodes</p>
+        <button class="card-btn">Browse podcasts</button>
+      </div>
+
+      <div class="library-footer">
+        <a href="#">Legal</a>
+        <a href="#">Safety & Privacy Center</a>
+        <a href="#">Privacy Policy</a>
+
+        <a href="#">Cookies</a>
+        <a href="#">About Ads</a>
+        <a href="#">Accessibility</a>
+      </div>
+
+      <button class="language-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+        English
+      </button>
+    </aside>
+  <!-- <div class="container"> -->
+   
+    
+  <section class="popular-artists">
+
+  <div class="section-header">
+    <h2>Popular artists</h2>
+    <a href="#">Show all</a>
+  </div>
+
+  <div class="artist-row">
+
+    <!-- Artist Card -->
+    <div class="artist-card">
+      <div class="artist-image">
+        <img src="dua lipa.jpg" alt="">
+      </div>
+
+      <div class="artist-info">
+        <h3>Dua Lipa</h3>
+        <p>Artist</p>
+      </div>
+    </div>
+
+    <!-- Artist Card -->
+    <div class="artist-card">
+      <div class="artist-image">
+        <img src="the weeknd.jpg" alt="">
+      </div>
+
+      <div class="artist-info">
+        <h3>The Weeknd</h3>
+        <p>Artist</p>
+      </div>
+    </div>
+
+    <!-- Artist Card -->
+    <div class="artist-card">
+
+      <div class="artist-image">
+        <img src="travis.png" alt="">
+
+        <button class="play-btn">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               fill="currentColor">
+
+            <path d="M8 5.14v14l11-7-11-7z"/>
+
+          </svg>
+        </button>
+      </div>
+
+      <div class="artist-info">
+        <h3>Travis Scott</h3>
+        <p>Artist</p>
+      </div>
+    </div>
+
+    <!-- Artist Card -->
+    <div class="artist-card">
+      <div class="artist-image">
+        <img src="lamar.jpg" alt="">
+      </div>
+
+      <div class="artist-info">
+        <h3>Kendrick Lamar</h3>
+        <p>Artist</p>
+      </div>
+    </div>
+
+    <!-- Artist Card -->
+    <div class="artist-card">
+      <div class="artist-image">
+        <img src="drakee.jpg" alt="">
+      </div>
+
+      <div class="artist-info">
+        <h3>Drake</h3>
+        <p>Artist</p>
+      </div>
+    </div>
+
+    <!-- Artist Card -->
+    <div class="artist-card">
+      <div class="artist-image">
+        <img src="juice.jpg" alt="">
+      </div>
+
+      <div class="artist-info">
+        <h3>Juice WRLD</h3>
+        <p>Artist</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Albums and Singles Section -->
+  <div class="section-header">
+    <h2>Popular Albums and Singles</h2>
+    <a href="#">Show all</a>
+  </div>
+
+  <div class="artist-row">
+
+    <!-- Artist Card -->
+    <div class="artist-card1">
+      <div class="artist-image1">
+        <img src="likeus.jpg" alt="">
+      </div>
+
+      <div class="artist-info">
+        <h3>Not Like Us</h3>
+        <p>Kendrick Lamar</p>
+      </div>
+    </div>
+
+    <!-- Artist Card -->
+    <div class="artist-card1">
+      <div class="artist-image1">
+        <img src="505.jpg" alt="">
+      </div>
+
+      <div class="artist-info">
+        <h3>505</h3>
+        <p>Arctic Monkeys</p>
+      </div>
+    </div>
+
+    <!-- Artist Card -->
+    <div class="artist-card1">
+
+      <div class="artist-image1">
+        <img src="play.jpg" alt="">
+
+        <button class="play-btn">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24"
+               fill="currentColor">
+
+            <path d="M8 5.14v14l11-7-11-7z"/>
+
+          </svg>
+        </button>
+      </div>
+
+      <div class="artist-info">
+        <h3>Sky</h3>
+        <p>Playboi Carti</p>
+      </div>
+    </div>
+
+    <!-- Artist Card -->
+    <div class="artist-card1">
+      <div class="artist-image1">
+        <img src="fein.jpg" alt="">
+      </div>
+
+      <div class="artist-info">
+        <h3>FE!N</h3>
+        <p>Travis Scott</p>
+      </div>
+    </div>
+
+    <!-- Artist Card -->
+    <div class="artist-card1">
+      <div class="artist-image1">
+        <img src="star.jpg" alt="">
+      </div>
+
+      <div class="artist-info">
+        <h3>Starboy</h3>
+        <p>The Weeknd</p>
+      </div>
+    </div>
+
+    <!-- Artist Card -->
+    <div class="artist-card1">
+      <div class="artist-image1">
+        <img src="lose.jpg" alt="">
+      </div>
+
+      <div class="artist-info">
+        <h3>Lose Yourself</h3>
+        <p>Eminem</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Hidden items -->
+  <div class="hidden-items" id="hiddenItems" ">
+    <div class="artist-row">
+      <!-- Artist Card -->
+      <div class="artist-card">
+        <div class="artist-image">
+          <img src="dua lipa.jpg" alt="">
+        </div>
+
+        <div class="artist-info">
+          <h3>Bad Bunny</h3>
+          <p>Artist</p>
+        </div>
+      </div>
+
+      <!-- Artist Card -->
+      <div class="artist-card">
+        <div class="artist-image">
+          <img src="the weeknd.jpg" alt="">
+        </div>
+
+        <div class="artist-info">
+          <h3>Billie Eilish</h3>
+          <p>Artist</p>
+        </div>
+      </div>
+
+      <!-- Artist Card -->
+      <div class="artist-card">
+        <div class="artist-image">
+          <img src="travis.png" alt="">
+        </div>
+
+        <div class="artist-info">
+          <h3>Post Malone</h3>
+          <p>Artist</p>
+        </div>
+      </div>
+
+      <!-- Artist Card -->
+      <div class="artist-card">
+        <div class="artist-image">
+          <img src="lamar.jpg" alt="">
+        </div>
+
+        <div class="artist-info">
+          <h3>Tyler, The Creator</h3>
+          <p>Artist</p>
+        </div>
+      </div>
+
+      <!-- Album Card -->
+      <div class="artist-card1">
+        <div class="artist-image1">
+          <img src="likeus.jpg" alt="">
+        </div>
+
+        <div class="artist-info">
+          <h3>Blinding Lights</h3>
+          <p>The Weeknd</p>
+        </div>
+      </div>
+
+      <!-- Album Card -->
+      <div class="artist-card1">
+        <div class="artist-image1">
+          <img src="505.jpg" alt="">
+        </div>
+
+        <div class="artist-info">
+          <h3>As It Was</h3>
+          <p>Harry Styles</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- RADIO SECTION -->
+
+<div class="section-header">
+  <h2>Popular Radio</h2>
+  <a href="#">Show all</a>
+</div>
+
+<div class="artist-row">
+
+  <!-- CARD -->
+  <div class="artist-card1">
+    <div class="artist-image1">
+      <img src="chill mix.jpg" alt="">
+
+      <button class="play-btn">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 24 24"
+             fill="currentColor">
+
+          <path d="M8 5.14v14l11-7-11-7z"/>
+
+        </svg>
+      </button>
+    </div>
+
+    <div class="artist-info">
+      <h3>Chill Mix</h3>
+      <p>With Oceans - Rowald Styen</p>
+    </div>
+  </div>
+
+  <!-- CARD -->
+  <div class="artist-card1">
+    <div class="artist-image1">
+      <img src="90s.jpg" alt="">
+    </div>
+
+    <div class="artist-info">
+      <h3>90s Hits</h3>
+      <p>With Tupac, Nirvana, Eminem</p>
+    </div>
+  </div>
+
+  <!-- CARD -->
+  <div class="artist-card1">
+    <div class="artist-image1">
+      <img src="lana.jpg" alt="">
+    </div>
+
+    <div class="artist-info">
+      <h3>Lana Del Rey Radio</h3>
+      <p>with Mitski, Billie Eilish</p>
+    </div>
+  </div>
+
+  <!-- CARD -->
+  <div class="artist-card1">
+    <div class="artist-image1">
+      <img src="central.jpg" alt="">
+    </div>
+
+    <div class="artist-info">
+      <h3>Central Cee Radio</h3>
+      <p>with Dave, AJ Tracey</p>
+    </div>
+  </div>
+
+  <!-- CARD -->
+  <div class="artist-card1">
+    <div class="artist-image1">
+      <img src="post.jpg" alt="">
+    </div>
+
+    <div class="artist-info">
+      <h3>Post Malone Radio</h3>
+      <p>with The Kid LAROI, Morgan Wallen</p>
+    </div>
+  </div>
+  </div>
+
+<!-- </div> -->
+
+  <button class="show-more-btn" id="showMoreBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+</section>
+
+</div>
+  </div>
+ 
+<footer>
+  <div class="footer">
+    <div class="footer-logo">
+      <img src="audio.png" alt="Logo">
+    </div>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">For the Record</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Communities</h4>
+        <ul>
+          <li><a href="#">For Artists</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Vendors</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Web Player</a></li>
+          <li><a href="#">Free Mobile App</a></li>
+          <li><a href="#">Contact Spotify</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Spotify Plans</h4>
+        <ul>
+          <li><a href="#">Premium Individual</a></li>
+          <li><a href="#">Premium Duo</a></li>
+          <li><a href="#">Premium Family</a></li>
+          <li><a href="#">Spotify Free</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <div>
+      <a href="#">Legal</a>
+      <a href="#">Safety & Privacy Center</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookies</a>
+      <a href="#">About Ads</a>
+      <a href="#">Accessibility</a>
+    </div>
+    <div>© 2026 AudioMack AB | Kosovo (English)</div>
+  </div>
+  </div>
+</body>
+</html>
+
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const linkSection = document.getElementById('linkSection');
+  
+  hamburger.addEventListener('click', () => {
+    linkSection.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+
+  // Close menu when a link is clicked
+  const links = linkSection.querySelectorAll('a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      linkSection.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+  </script>
+  <script>
+    
+  const showMoreBtn = document.getElementById('showMoreBtn');
+  const hiddenItems = document.getElementById('hiddenItems');
+
+  showMoreBtn.addEventListener('click', () => {
+    if (hiddenItems.style.display === 'none') {
+      hiddenItems.style.display = 'block';
+      showMoreBtn.classList.add('active');
+    } else {
+      hiddenItems.style.display = 'none';
+      showMoreBtn.classList.remove('active');
+    }
+  });
+  </script>

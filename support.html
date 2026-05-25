@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help Articles</title>
+    <link rel="stylesheet" href="support.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+      <div class="nav-bar">
+    <div class="logo-section">
+      <div class="logo"> 
+        <h1>AudioMack Support</h1>
+        <a href="index.html"><img src="images (2).png" alt=""></a>
+        <a href="index.html"><div class="home-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3.2 2.8 10.5a1 1 0 0 0 .6 1.8H5V20a1 1 0 0 0 1 1h4v-5h4v5h4a1 1 0 0 0 1-1v-7.7h1.6a1 1 0 0 0 .6-1.8L12 3.2Z"/>
+          </svg>
+        </div></a>
+      </div>
+    </div>
+    
+    
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <div class="link-section" id="linkSection">
+      <a href="premium.html" class="nav-premium">Premium</a>
+      <a href="support.html" class="support">Support</a>
+      <a href="#" class="install">Install App</a>
+      <a href="#" class="signup">Sign Up</a>
+      <a href="#" class="login">Log in</a>
+    </div>
+  </div>
+  <div class="background">
+  <div class="help-container">
+
+    <h1 class="help-title">Browse help articles</h1>
+
+    <div class="help-item">
+      <div class="help-header">
+        <div class="left">
+          <i class="fa-regular fa-credit-card"></i>
+          <h3>Payments & billing</h3>
+        </div>
+
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </div>
+
+      <div class="content">
+        <p>
+          Learn about subscriptions, refunds, payment methods, and invoices.
+        </p>
+      </div>
+    </div>
+
+    <div class="help-item">
+      <div class="help-header">
+        <div class="left">
+          <i class="fa-regular fa-user"></i>
+          <h3>Manage your account</h3>
+        </div>
+
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </div>
+
+      <div class="content">
+        <p>
+          Update your email, password, username, and account settings.
+        </p>
+      </div>
+    </div>
+
+    <div class="help-item">
+      <div class="help-header">
+        <div class="left">
+          <i class="fa-solid fa-sliders"></i>
+          <h3>Premium plans</h3>
+        </div>
+
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </div>
+
+      <div class="content">
+        <p>
+          Compare plans and discover premium features available to you.
+        </p>
+      </div>
+    </div>
+
+    <div class="help-item">
+      <div class="help-header">
+        <div class="left">
+          <i class="fa-solid fa-table-cells"></i>
+          <h3>In-app features</h3>
+        </div>
+
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </div>
+
+      <div class="content">
+        <p>
+          Explore all the tools and features available inside the app.
+        </p>
+      </div>
+    </div>
+
+    <div class="help-item">
+      <div class="help-header">
+        <div class="left">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h3>Devices & troubleshooting</h3>
+        </div>
+
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </div>
+
+      <div class="content">
+        <p>
+          Fix playback, connection, and device compatibility issues quickly.
+        </p>
+      </div>
+    </div>
+
+    <div class="help-item">
+      <div class="help-header">
+        <div class="left">
+          <i class="fa-solid fa-lock"></i>
+          <h3>Safety & privacy</h3>
+        </div>
+
+        <i class="fa-solid fa-chevron-down arrow"></i>
+      </div>
+
+      <div class="content">
+        <p>
+          Learn how your data is protected and how privacy settings work.
+        </p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <script>
+    const items = document.querySelectorAll(".help-item");
+
+    items.forEach(item => {
+      const header = item.querySelector(".help-header");
+
+      header.addEventListener("click", () => {
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+
+</body>
+</html>

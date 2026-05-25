@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Audio Mack - Your Music, Your Way</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="premium.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/magic-retro" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+<div class="container">
+<body>
+  <div class="nav-bar">
+    <div class="logo-section">
+      <div class="logo"> 
+        <h1>AudioMack Premium</h1>
+        <a href="index.html"><img src="images (2).png" alt=""></a>
+        <a href="index.html"><div class="home-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3.2 2.8 10.5a1 1 0 0 0 .6 1.8H5V20a1 1 0 0 0 1 1h4v-5h4v5h4a1 1 0 0 0 1-1v-7.7h1.6a1 1 0 0 0 .6-1.8L12 3.2Z"/>
+          </svg>
+        </div></a>
+      </div>
+    </div>
+    
+    
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <div class="link-section" id="linkSection">
+      <a href="premium.html" class="nav-premium">Premium</a>
+      <a href="support.html" class="support">Support</a>
+      <a href="#" class="install">Install App</a>
+      <a href="#" class="signup">Sign Up</a>
+      <a href="#" class="login">Log in</a>
+    </div>
+  </div>
+    <div class="plans-container">
+
+    <!-- INDIVIDUAL -->
+
+    <div class="plan-card">
+
+      <div class="top-label pink" style="font-family: 'Orbitron', sans-serif;">
+        €0 for 3 months
+      </div>
+
+      <div class="premium">
+         Premium
+      </div>
+
+      <h1 class="plan-title title-pink">
+        Individual
+      </h1>
+
+      <div class="price">
+        €0 for 3 months
+      </div>
+
+      <div class="after">
+        €5.99/month after
+      </div>
+
+      <hr>
+
+      <ul class="features">
+        <li>1 Premium account</li>
+        <li>Cancel anytime</li>
+      </ul>
+
+      <button class="plan-btn btn-pink" style="font-family: 'Orbitron', sans-serif;">
+        Try 3 months for €0
+      </button>
+
+      <div class="footer-text">
+        €0 for 3 months, then €5.99 per month after.
+        Offer only available if you haven’t tried Premium before.
+        <a href="#">Terms apply.</a>
+      </div>
+      <button class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="premium.html">Premium</a>
+  <a href="support.html">Support</a>
+  <a href="#">Install App</a>
+  <a href="#">Sign Up</a>
+  <a href="#">Log in</a>
+</div>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  });
+
+  // close menu when clicking link
+  document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("active");
+      hamburger.classList.remove("active");
+    });
+  });
+</script>
+    </div>
+
+    <!-- STUDENT -->
+
+    <div class="plan-card">
+
+      <div class="top-label purple">
+        €0 for 1 month
+      </div>
+
+      <div class="premium">
+         Premium
+      </div>
+
+      <h1 class="plan-title title-purple">
+        Student
+      </h1>
+
+      <div class="price" style="font-family: 'Orbitron', sans-serif;">
+        €0 for 1 month
+      </div>
+
+      <div class="after">
+        €3.29/month after
+      </div>
+
+      <hr>
+
+      <ul class="features">
+        <li>1 verified Premium account</li>
+        <li>Discount for eligible students</li>
+        <li>Cancel anytime</li>
+      </ul>
+
+      <button class="plan-btn btn-purple" style="font-family: 'Orbitron', sans-serif;">
+        Try 1 month for €0
+      </button>
+
+      <div class="footer-text">
+        €0 for 1 month, then €3.29 per month after.
+        Offer reserved for students enrolled in accredited higher education.
+        <a href="#">Terms and Conditions.</a>
+      </div>
+
+    </div>
+
+    <!-- DUO -->
+
+    <div class="plan-card">
+          <div class="top-label purple">
+        €0 for 5 month
+      </div>
+
+      <div class="premium">
+         Premium
+      </div>
+
+      <h1 class="plan-title title-gold">
+        Duo
+      </h1>
+
+      <div class="price">
+        €8.49 / month
+      </div>
+
+      <div class="after">
+        &nbsp;
+      </div>
+
+      <hr>
+
+      <ul class="features">
+        <li>2 Premium accounts</li>
+        <li>Cancel anytime</li>
+      </ul>
+
+      <button class="plan-btn btn-gold" style="font-family: 'Orbitron', sans-serif;">
+        Get Premium Duo
+      </button>
+
+      <div class="footer-text">
+        For couples who reside at the same address.
+        <a href="#">Terms apply.</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
